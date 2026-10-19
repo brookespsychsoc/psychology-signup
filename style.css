@@ -29,27 +29,36 @@ h1, h2, h3 {
 
 /* header adjustment*/
 header{
-position: relative;
-width: 100%;
-margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 /*Title design*/
 section.Title {
     background-color: var(--box-bg);
     border-radius: 12px;
-    padding: 25px;
-    margin: 0 auto;       
+    padding: 12px 20px;
+    margin: 0 auto 20px auto;       
     text-align: center;   
-    max-width: 800px;
+    max-width: 450px;
+    box-sizing: border-box;
+}
+
+section.Title h1{
+    font-size: 1.4rem;
+    margin: 0;
+    
 }
 
 /* Logo positioning */
 img.logo {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 200px;
+    position: static;
+    width: 120px;
+    margin-bottom: 20px;
+    display: block;
 }
 
 /* Link buttons */
@@ -77,26 +86,6 @@ section.box{
     padding: 25px;
     margin: 30px 0;
 
-}
-
-/* Make logo and title stack clean on mobile screens */
-@media (max-width: 768px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    img.logo {
-        position: static;     
-        margin-bottom: 20px;  
-        width: 130px;         
-    }
-    
-    section.Title {
-        width: 100%;
-        box-sizing: border-box;
-    }
 }
 
 
