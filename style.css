@@ -55,7 +55,7 @@ section.Title h1{
 /* Logo positioning */
 img.logo {
     position: static;
-    width: 175px;
+    width: 150px;
     margin-bottom: 0px;
     display: block;
 }
@@ -68,7 +68,7 @@ a{
     border-radius: 50px;
     text-decoration: none;
     display: inline-block;
-    margin: 15px 0;
+    margin: 10px 0;
 }
 
 /* Center text */
