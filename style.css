@@ -27,11 +27,6 @@ h1, h2, h3 {
     text-decoration: underline;
 }
 
-/* Logo dimensions 
-img.logo {
-    width: 200px;
-}*/
-
 /* header adjustment*/
 header{
 position: relative;
@@ -82,6 +77,26 @@ section.box{
     padding: 25px;
     margin: 30px 0;
 
+}
+
+/* Make logo and title stack clean on mobile screens */
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    img.logo {
+        position: static;     
+        margin-bottom: 20px;  
+        width: 130px;         
+    }
+    
+    section.Title {
+        width: 100%;
+        box-sizing: border-box;
+    }
 }
 
 
