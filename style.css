@@ -2,7 +2,6 @@
 :root {
     --blue: #245088;
     --beige: #efdecd;
-    --new-beige: #f7e3d2;
     --white: #FFFFFF;
     --orange: #ee770c;
     --box-bg: rgba(255, 252, 248, 0.85);
@@ -86,6 +85,13 @@ section.box{
     padding: 25px;
     margin: 30px 0;
 
+}
+
+/* Form compatability */
+iframe {
+    width: 100%;
+    max-width: 640px;
+    border: 0;
 }
 
 
